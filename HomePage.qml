@@ -5,4 +5,10 @@ import QtQuick.Layouts
 Page {
     id: homePage
     anchors.fill: parent
+
+    Rectangle {
+        width: parent.width
+        height: parent.height
+        color: "#272727"
+    }
 }

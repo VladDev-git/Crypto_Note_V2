@@ -8,7 +8,7 @@ Page {
     Rectangle {
         width: parent.width
         height: parent.height
-        color: "red"
+        color: "#A40000"
 
         ColumnLayout {
             anchors.fill: parent
@@ -96,7 +96,7 @@ Page {
                 Layout.alignment: Qt.AlignHCenter
                 anchors.bottom: newUsernameInput.top
                 anchors.bottomMargin: 10
-                color: "red"
+                color: "#A40000"
 
                 Image {
                     source: "qrc:/Icon/free-icon-user.png"

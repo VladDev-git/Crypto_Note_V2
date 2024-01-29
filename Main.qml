@@ -11,10 +11,11 @@ Window {
     StackView {
         id: stackView
         anchors.fill: parent
-        initialItem: SaveLoginPage {}
+        initialItem: HomePage {}
 
         LoginPage {
             id: loginPage
+            visible: false
         }
 
         RegisterPage {
