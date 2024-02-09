@@ -166,5 +166,14 @@ Page {
                 }
             }
         }
+
+        Rectangle {
+            id: centerContentModularRect
+            width: parent.width
+            height: parent.height - topHomeMenuPanelRect.height - bottomHomeMenuPanelRect.height
+            anchors.top: topHomeMenuPanelRect.bottom
+            anchors.bottom: bottomHomeMenuPanelRect.top
+            color: "#181818"
+        }
     }
 }
