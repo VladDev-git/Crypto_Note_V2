@@ -101,7 +101,7 @@ Page {
                     color: "#A40000"
 
                     Image {
-                        source: "qrc:/Icon/free-icon-user.png"
+                        source: "qrc:/img/Icon/free-icon-user.png"
                         anchors.fill: parent
                         fillMode: Image.PreserveAspectFit  // Режим збереження пропорцій зображення
                     }

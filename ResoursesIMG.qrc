@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>Icon/align-left.svg</file>
+        <file>Icon/free-icon-user.png</file>
+        <file>Icon/menu.svg</file>
+        <file>Icon/more-vertical.svg</file>
+        <file>Icon/plus-circle (1).svg</file>
+        <file>Icon/search.svg</file>
+        <file>Icon/star.svg</file>
+        <file>Icon/TitleIMG_1.jpg</file>
+        <file>Icon/user.svg</file>
+    </qresource>
+</RCC>

@@ -25,7 +25,7 @@ Page {
                     implicitWidth: 55
 
                     contentItem: Image {
-                        source: "qrc:/Icon/align-left.svg"
+                        source: "qrc:/img/Icon/align-left.svg"
                         width: 35
                         height: parent.height
                         fillMode: Image.PreserveAspectFit
@@ -50,7 +50,7 @@ Page {
                     anchors.right: parent.right
 
                     contentItem: Image {
-                        source: "qrc:/Icon/more-vertical.svg"
+                        source: "qrc:/img/Icon/more-vertical.svg"
                         width: 35
                         height: parent.height
                         fillMode: Image.PreserveAspectFit
@@ -80,7 +80,7 @@ Page {
                     anchors.rightMargin: 50
 
                     contentItem: Image {
-                        source: "qrc:/Icon/menu.svg"
+                        source: "qrc:/img/Icon/menu.svg"
                         width: 35
                         height: parent.height
                         fillMode: Image.PreserveAspectFit
@@ -99,7 +99,7 @@ Page {
                     anchors.rightMargin: 50
 
                     contentItem: Image {
-                        source: "qrc:/Icon/search.svg"
+                        source: "qrc:/img/Icon/search.svg"
                         width: 35
                         height: parent.height
                         fillMode: Image.PreserveAspectFit
@@ -117,7 +117,7 @@ Page {
                     Layout.alignment: Qt.AlignHCenter
 
                     contentItem: Image {
-                        source: "qrc:/Icon/plus-circle (1).svg"
+                        source: "qrc:/img/Icon/plus-circle (1).svg"
                         width: 35
                         height: parent.height
                         fillMode: Image.PreserveAspectFit
@@ -136,7 +136,7 @@ Page {
                     anchors.leftMargin: 50
 
                     contentItem: Image {
-                        source: "qrc:/Icon/star.svg"
+                        source: "qrc:/img/Icon/star.svg"
                         width: 35
                         height: parent.height
                         fillMode: Image.PreserveAspectFit
@@ -154,7 +154,7 @@ Page {
                     anchors.leftMargin: 50
 
                     contentItem: Image {
-                        source: "qrc:/Icon/user.svg"
+                        source: "qrc:/img/Icon/user.svg"
                         width: 35
                         height: parent.height
                         fillMode: Image.PreserveAspectFit

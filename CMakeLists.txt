@@ -3,6 +3,7 @@ cmake_minimum_required(VERSION 3.16)
 project(CryptoNotes_V2 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTORCC ON)
 
 find_package(Qt6 6.4 REQUIRED COMPONENTS Quick)
 
@@ -18,11 +19,11 @@ qt_add_qml_module(appCryptoNotes_V2
     QML_FILES Main.qml
     QML_FILES LoginPage.qml
     QML_FILES RegisterPage.qml
-    RESOURCES
     QML_FILES SaveLoginPage.qml
     QML_FILES HomePage.qml
     SOURCES user.h user.cpp
     SOURCES profil.h profil.cpp
+    RESOURCES ResoursesIMG.qrc
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
