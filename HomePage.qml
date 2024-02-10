@@ -126,6 +126,10 @@ Page {
                     background: Rectangle {
                         color: "#181818"
                     }
+
+                    onClicked: {
+
+                    }
                 }
 
                 Button {
@@ -174,6 +178,72 @@ Page {
             anchors.top: topHomeMenuPanelRect.bottom
             anchors.bottom: bottomHomeMenuPanelRect.top
             color: "#181818"
+
+            ScrollView {
+                anchors.fill: parent
+                // background: Rectangle {
+                //     implicitWidth: 8
+                //     color: "transparent"
+                // }
+
+                // contentItem: Rectangle {
+                //     implicitWidth: 8
+                //     color: "#181818"
+                // }
+
+                // ScrollBar.vertical: ScrollBar {
+                //     //policy: ScrollBar.AlwaysOn
+                //     background: Rectangle {
+                //         implicitWidth: 8
+                //         color: "transparent"
+                //     }
+                //     contentItem: Rectangle {
+                //         implicitWidth: 8
+                //         color: "orange"
+                //     }
+                // }
+
+                ScrollBar.vertical: ScrollBar {
+                        id: scrollBar
+                        width: 8
+                        policy: ScrollBar.AlwaysOn
+
+                        background: Rectangle {
+                            implicitWidth: 8
+                            color: "transparent"
+                        }
+
+                        contentItem: Rectangle {
+                            implicitHeight: parent.height * parent.height / scrollView.contentHeight
+                            color: "orange" // Колір полоси прокрутки
+                        }
+                    }
+
+                GridLayout {
+                    anchors.fill: parent
+                    columns: 3
+                    columnSpacing: 20
+                    rowSpacing: 20
+                    anchors.leftMargin: 15
+                    anchors.topMargin: 10
+
+                    Repeater {
+                        model: 30
+
+                        Rectangle {
+                            width: 220
+                            height: 220
+                            color: "grey"
+                            radius: 20
+
+                            Text {
+                                anchors.centerIn: parent
+                                text: "Item"
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }

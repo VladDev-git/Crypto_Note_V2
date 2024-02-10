@@ -8,6 +8,7 @@ Window {
     visible: true
     title: qsTr("Crypto Note")
 
+
     StackView {
         id: stackView
         anchors.fill: parent
