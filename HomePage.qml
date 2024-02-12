@@ -39,7 +39,6 @@ Page {
                 Text {
                     text: "Home"
                     height: parent.height
-                    //implicitHeight: parent.height
                     Layout.alignment: Qt.AlignHCenter
                     color: "white"
                 }
@@ -181,43 +180,25 @@ Page {
 
             ScrollView {
                 anchors.fill: parent
-                // background: Rectangle {
-                //     implicitWidth: 8
-                //     color: "transparent"
-                // }
-
-                // contentItem: Rectangle {
-                //     implicitWidth: 8
-                //     color: "#181818"
-                // }
-
-                // ScrollBar.vertical: ScrollBar {
-                //     //policy: ScrollBar.AlwaysOn
-                //     background: Rectangle {
-                //         implicitWidth: 8
-                //         color: "transparent"
-                //     }
-                //     contentItem: Rectangle {
-                //         implicitWidth: 8
-                //         color: "orange"
-                //     }
-                // }
 
                 ScrollBar.vertical: ScrollBar {
-                        id: scrollBar
-                        width: 8
-                        policy: ScrollBar.AlwaysOn
+                    anchors.right: parent.right
+                    implicitHeight: parent.height
+                    width: 5
 
-                        background: Rectangle {
-                            implicitWidth: 8
-                            color: "transparent"
-                        }
-
-                        contentItem: Rectangle {
-                            implicitHeight: parent.height * parent.height / scrollView.contentHeight
-                            color: "orange" // Колір полоси прокрутки
-                        }
+                    background: Rectangle {
+                        //implicitWidth: 4
+                        color: "#181818"
                     }
+
+                    // contentItem: Rectangle {
+                    //     //implicitHeight: parent.height * parent.height / scrollView.contentHeight
+                    //     //implicitHeight: 30
+                    //     color: "gray" // Колір повзунка
+                    // }
+                }
+
+                //ScrollBar.horizontal.interactive: true
 
                 GridLayout {
                     anchors.fill: parent
