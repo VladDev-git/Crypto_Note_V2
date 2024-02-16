@@ -179,6 +179,7 @@ Page {
             color: "#181818"
 
             ScrollView {
+                id: control
                 anchors.fill: parent
 
                 ScrollBar.vertical: ScrollBar {
@@ -187,22 +188,24 @@ Page {
                     width: 5
 
                     background: Rectangle {
-                        //implicitWidth: 4
                         color: "#181818"
                     }
-
-                    // contentItem: Rectangle {
-                    //     //implicitHeight: parent.height * parent.height / scrollView.contentHeight
-                    //     //implicitHeight: 30
-                    //     color: "gray" // Колір повзунка
-                    // }
                 }
 
-                //ScrollBar.horizontal.interactive: true
+                ScrollBar.horizontal: ScrollBar {
+                    anchors.bottom: parent.bottom
+                    implicitWidth: parent.width
+                    implicitHeight: 5
+                    //height: 1
+
+                    background: Rectangle {
+                        color: "#181818"
+                    }
+                }
 
                 GridLayout {
                     anchors.fill: parent
-                    columns: 3
+                    columns: 5
                     columnSpacing: 20
                     rowSpacing: 20
                     anchors.leftMargin: 15
@@ -216,6 +219,7 @@ Page {
                             height: 220
                             color: "grey"
                             radius: 20
+                            Layout.alignment: Qt.AlignHCenter | Qt.AlignVCenter
 
                             Text {
                                 anchors.centerIn: parent
