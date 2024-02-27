@@ -9,7 +9,7 @@ Page {
     Rectangle {
         width: parent.width
         height: parent.height
-        color: "#A40000"
+        color: "#871300"
 
         ColumnLayout {
             id: colm
@@ -60,7 +60,7 @@ Page {
                 //text: ""
                 Layout.alignment: Qt.AlignHCenter
                 anchors.top: passwordInput.bottom
-                anchors.topMargin: 5
+                anchors.topMargin: 7
                 Text {
                     text: "Увійти"
                     color: "white"
@@ -98,7 +98,7 @@ Page {
                     Layout.alignment: Qt.AlignHCenter
                     anchors.bottom: usernameInput.top
                     anchors.bottomMargin: 10
-                    color: "#A40000"
+                    color: "#871300"
 
                     Image {
                         source: "qrc:/img/Icon/free-icon-user.png"

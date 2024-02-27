@@ -8,7 +8,7 @@ Page {
     Rectangle {
         width: parent.width
         height: parent.height
-        color: "#A40000"
+        color: "#871300"
 
         ColumnLayout {
             anchors.fill: parent
@@ -58,7 +58,7 @@ Page {
                 Layout.alignment: Qt.AlignHCenter
                 //text: "Зареєструватися"
                 anchors.top: newPasswordInput.bottom
-                anchors.topMargin: 5
+                anchors.topMargin: 7
                 Text {
                     text: "Зареєструватися"
                     color: "white"
@@ -96,7 +96,7 @@ Page {
                 Layout.alignment: Qt.AlignHCenter
                 anchors.bottom: newUsernameInput.top
                 anchors.bottomMargin: 10
-                color: "#A40000"
+                color: "#871300"
 
                 Image {
                     source: "qrc:/img/Icon/free-icon-user.png"
